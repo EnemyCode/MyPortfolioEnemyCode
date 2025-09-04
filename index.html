@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selección de vistas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <script src="functinality.js" defer></script>
+  <div class="layout">
+
+    <nav class="menu">
+      <img class="photo" src="resources/playmobil.png" alt="">
+      <div class="button-container">
+        <button onclick="mostrarVista('vista1')">Presentación</button>
+        <button onclick="mostrarVista('vista2')">Curriculum</button>
+        <button onclick="mostrarVista('vista3')">Proyectos</button>
+      </div>
+    </nav>
+
+    <div class="contenido">
+      <div id="vista1" class="vista activa">
+        <h2 class="title">Jesús Antonio de la Fuente Lozano</h2> 
+        <div class="intern-1">
+          <div class="intern-2">
+            <h3>¿Quien soy?...</h3>
+            <p>Mi nombre es <b class="enfasy-1">Jesús Antonio de la Fuente Lozano</b>, 
+              un joven emprendedor que no deja de innovar, siempre creciendo en formacion y 
+              empapado en proyectos. Me gusta mucho trabajar en equipo priorizando la unidad y 
+              la ayuda mutua. <br><br>
+              <b class="enfasy-1">Soy muy proactivo y energico</b>, 
+              siempre busco algo que hacer ya me que gusta sentirme realizado. 
+            </p>
+            <img src="resources/nosignal.gif" alt="gif-1">
+          </div>
+          <div class="intern-2">
+            <h3>¿A que me dedico?...</h3>
+            <p>Actualmente ando en busqueda activa de empleo e <b class="enfasy-1">invirtiendo 
+              en mi formación</b>, buscando todo tipo de proyectos. <br><br>
+              Mientras tanto, ocupo mi tiempo libre realizando proyectos utiles para mi vida, 
+              que me ayuden a <b class="enfasy-1">seguir adelante con precision</b> y asi 
+              poder aprender mas de estos dia tras dia aplicando soluciones reales, tecnicas y 
+              profesionales.</p>
+              <img src="resources/nosignal.gif" alt="gif-1">
+          </div>
+          <div class="intern-2">
+            <h3>Mis hobies...</h3>
+            <p>Me gusta mucho la impresion 3D, no solo por el diseño, si no por la maquina en si.
+              me gusta mucho la personalizacion de maquinas CNC y planeo hacerd una en un futuro. <br><br>
+              Soy bateria, aprendí de forma autodidacta, por puro interes. Actualmente soy productor
+              de musica electronica junto con otros amigos, deseosos de salir a un escenario</p>
+            <img src="resources/nosignal.gif" alt="gif-1">
+          </div>
+          <section class="intern-skill">
+            <h3>Mis skills</h3>
+            <ul class="skills-list">
+              <li class="skill">
+                <img src="resources//Python-logo.svg" alt="Python">
+                <progress class="skill-bar" value="50" max="100"></progress>
+                <span>Apps internas y modulos</span>
+              </li>
+              <li class="skill">
+                <img src="resources//C.svg" alt="C">
+                <progress class="skill-bar" value="20" max="100"></progress>
+                <span>Firmware y librerias</span>
+              </li>
+              <li class="skill">
+                  <img src="resources//java.webp" alt="C">
+                  <progress class="skill-bar" value="20" max="100"></progress>
+                  <span>Apps de movil</span>
+              </li>
+              <li class="skill">
+                  <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                    <text x="40" y="24" text-anchor="middle" font-size="16" font-family="monospace" fill="#e44d26">HTML</text>
+                    <text x="40" y="44" text-anchor="middle" font-size="16" font-family="monospace" fill="#1572b6">CSS</text>
+                    <text x="40" y="64" text-anchor="middle" font-size="16" font-family="monospace" fill="#f7df1e">JS</text>
+                  </svg>
+                  <progress class="skill-bar" value="20" max="100"></progress>
+                  <span>Mi web y Curriculum</span>
+                  
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div id="vista2" class="vista">
+        <h2>Curriculum</h2>
+        <iframe class="resume-frame" src="resume.html" width="100%" height="500px"></iframe>
+      </div>
+
+      <div id="vista3" class="vista">
+        <h2>Proyectos</h2>
+        <p>Si te apetece, puedes darte una vuelta por mis proyectos... hay de todo.</p>
+        <section class="proyects-layout">
+          <a href="http://www.google.com" class="proyect">
+            <img src="resources/nosignal.gif" alt="">
+            <h4>Proyecto 1</h4>
+          </a>
+          <a href="http://www.google.com" class="proyect">
+            <img src="resources/nosignal.gif" alt="">
+            <h4>Proyecto 2</h4>
+          </a>
+          <a href="http://www.google.com" class="proyect">
+            <img src="resources/nosignal.gif" alt="">
+            <h4>Proyecto 3</h4>
+          </a>
+          <a href="http://www.google.com" class="proyect">
+            <img src="resources/nosignal.gif" alt="">
+            <h4>Proyecto 3</h4>
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
